@@ -1,0 +1,67 @@
+{
+    "contentType": "collection",
+    "contentId": "motd-default-collection",
+    "tcId": "634e8e85-e2fc-4c68-bb10-93604cf6605f",
+    "contentItems": [
+      {
+        "contentType": "content-item",
+        "contentId": "46874c56-0973-4cbe-ac98-b580c5b36df5",
+        "tcId": "61fb3dd8-f23d-45cc-9058-058ab223ba5c",
+        "contentFields": {
+          "body": {
+            "ar": "17.30",
+            "en": "17.30",
+            "de": "17.30",
+            "es": "17.30",
+            "es-419": "17.30",
+            "fr": "17.30",
+            "it": "17.30",
+            "ja": "17.30",
+            "ko": "17.30",
+            "pl": "17.30",
+            "pt-BR": "17.30",
+            "ru": "17.30",
+            "tr": "17.30"
+          },
+          "entryType": "Website",
+          "image": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "url": "https://cdn2.unrealengine.com/Fortnite%2Fpatch-notes%2Fv8-00%2Fbr-header-v8-00%2FBR08_Social_PirateCannon-1920x1080-5f700a0f80e81232df19a73cca73180ffee713e8.jpg"
+            }
+          ],
+          "tabTitleOverride": "Eclipse Season 5",
+          "tileImage": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "url": "https://cdn2.unrealengine.com/Fortnite%2Fpatch-notes%2Fv8-00%2Fbr-header-v8-00%2FBR08_Social_PirateCannon-1920x1080-5f700a0f80e81232df19a73cca73180ffee713e8.jpg"
+            }
+          ],
+          "title": {
+            "ar": "17.30",
+            "en": "17.30",
+            "de": "17.30",
+            "es": "17.30",
+            "es-419": "17.30",
+            "fr": "17.30",
+            "it": "17.30",
+            "ja": "17.30",
+            "ko": "173.30",
+            "pl": "17.30",
+            "pt-BR": "17.30",
+            "ru": "17.30",
+            "tr": "17.30"
+          },
+          "videoAutoplay": false,
+          "videoLoop": false,
+          "videoMute": false,
+          "videoStreamingEnabled": false,
+          "websiteButtonText": "Soon"
+        },
+        "contentHash": "Eclipsebackendcontenthashtylawin",
+        "contentSchemaName": "MotdWebsiteNewsWithVideo"
+        }
+    ]
+}

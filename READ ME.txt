@@ -1,0 +1,54 @@
+Hello! Thanks for purchasing this backend for your project! For any issues please create an ticket in https://discord.gg/xYxn6FQGyv
+
+1. How to use vbucks api?
+Here is an example url for it:
+
+http://localhost:3551/api/ogfn/vbucks?apikey=ogfnmarketapikeytest123&username=YOURUSERNAMEHERE&reason=REASONHERE
+
+Replace YOURUSERNAMEHERE with your account username on the backend.
+Replace REASONHERE with the reason in the config.json like for example Kill
+make it work on reboot!
+
+2. How to use lawin exploit fix?
+If you are using Project Reboot 3.0 as your gameserver goto FortPlayerController.cpp
+find this line: void AFortPlayerController::ServerLoadingScreenDroppedHook(UObject* Context, FFrame* Stack, void* Ret)
+replace the code block with this:
+
+void AFortPlayerController::ServerLoadingScreenDroppedHook(UObject* Context, FFrame* Stack, void* Ret)
+{
+	auto PlayerController = (AFortPlayerController*)Context;
+	auto playerState = Cast<AFortPlayerStateAthena>(PlayerController->GetPlayerState()); // Fixed cast
+	if (playerState)
+	{
+		std::string Playername = playerState->GetPlayerName().ToString();
+
+		std::string url = "http://localhost:3551/api/lawin/" + Playername;
+
+		CURL* curl = curl_easy_init();
+		if (curl)
+		{
+			std::string response;
+			curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
+			curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, WriteCallback);
+			curl_easy_setopt(curl, CURLOPT_WRITEDATA, &response);
+
+			CURLcode res = curl_easy_perform(curl);
+			if (res != CURLE_OK) {
+				curl_easy_cleanup(curl);
+				return;
+			}
+
+			if (response.find("Username not found.") != std::string::npos)
+			{
+				PlayerController->ClientReturnToMainMenu(L"dont backend exploit gng");
+			}
+
+			curl_easy_cleanup(curl);
+		}
+	}
+
+	return ServerLoadingScreenDroppedOriginal(Context, Stack, Ret);
+}
+
+Make sure to change the IP in that code block for your project!
+
