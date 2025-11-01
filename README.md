@@ -11,7 +11,7 @@
 - [x] Cloudstorage
 - [x] Auto shop (purchasing skins and items)  
 - [x] Full Battle Pass integration  
-- [x] Challenges system (daily and weekly challenges)  
+- [x] Challenges system (daily and weekly challenges) (not leveling)
 - [x] Friends system (add/remove/block friends)  
 - [x] XMPP  
 - [x] Working MCP
