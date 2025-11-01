@@ -40,7 +40,7 @@
 - [ ] Cross-platform matchmaking  
 - [ ] Competitive matchmaking and leaderboards  
 - [ ] Tournament support
-- [ ] Save The World (maybe)
+- [ ] Save The World (maybee)
 
 ## Bot Commands (NOTE: BOT IS DEPRECATED!)
 - [x] Register 
