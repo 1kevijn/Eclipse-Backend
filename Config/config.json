@@ -24,30 +24,31 @@
     "Api": {
       "bApiKey": "eclipse12apikeylol", 
       "reasons": {
-        "Kill": 100
+        "Kill": 100,
+        "WIN": 200 
       }
     },
 
     "Website": {
       "bUseWebsite": false,
-      "clientId": "1399490124089131089",
-      "clientSecret": "LmOG8jHTlQ1IdPhLLH9mhg-2s6hB6d6s",
+      "clientId": "",
+      "clientSecret": "",
       "redirectUri": "http://127.0.0.1:${websiteport}/oauth2/callback",
       "websiteport": 100
     },
 
     "//": "to add more gameserver on 'gameServerIP' add ip:port:playlist",
-    "matchmakerIP": "194.163.132.225:80",
+    "matchmakerIP": "127.0.0.1:80",
 
     "//": "to add more gameserver on 'gameServerIP' add ip:port:playlist",
 
     "gameServerIP": [
-        "194.163.132.225:7777:playlist_defaultsolo", 
-        "194.163.132.225:7777:playlist_defaultduo", 
-        "194.163.132.225:7777:playlist_defaultsquad",
-        "194.163.132.225:7777:playlist_low_solo",
-        "194.163.132.225:7777:playlist_vamp_solo",
-        "194.163.132.225:7777:playlist_solidgold_solo"
+        "127.0.0.1:7777:playlist_defaultsolo", 
+        "127.0.0.1:7777:playlist_defaultduo", 
+        "127.0.0.1:7777:playlist_defaultsquad",
+        "127.0.0.1:7777:playlist_low_solo",
+        "127.0.0.1:7777:playlist_vamp_solo",
+        "127.0.0.1:7777:playlist_solidgold_solo"
     ],
     
     "//": "For 'BattlePassSeason' enter only the number of your season (from 2 to 20)",
@@ -87,10 +88,10 @@
 
     "//": "If active it will send a message in the channel when the backend goes online",
     "bEnableBackendStatus": true,
-    "bBackendStatusChannelId": "1392594534726107149",
+    "bBackendStatusChannelId": "",
 
     "//": "Channel ID where boost notifications will be sent (optional)",
-    "bBoostRewardsChannelId": "1397569135097151600",
+    "bBoostRewardsChannelId": "",
 
     "//": "Use HTTPS (For VPS Side Only, Or If You Were To Setup  A Type Record To Your Own Public Adress From Your Domain) (You Also Need To Change The Examples In SSl Folder!)",
     "bEnableHTTPS": false, "//": "Only Enable if You Have SSL Certificate In The ssl Folder",
