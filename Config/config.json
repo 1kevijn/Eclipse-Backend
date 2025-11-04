@@ -53,11 +53,11 @@
     
     "//": "For 'BattlePassSeason' enter only the number of your season (from 2 to 20)",
     "bEnableBattlepass": true,
-    "bBattlePassSeason": 4,
+    "bBattlePassSeason": 8,
 
     "//": "For 'bVersionJoinable' you can set a season that is also `9.10` and not just `9`",
     "bEnableOnlyOneVersionJoinable": false,
-    "bVersionJoinable": 4.5,
+    "bVersionJoinable": 8.51,
 
     "//": "",
     "bUseAutoRotate": false,
